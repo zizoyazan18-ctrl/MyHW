@@ -13,9 +13,6 @@
         android:padding="24dp"
         android:gravity="center_horizontal">
 
-        <!-- Title -->
-
-        <!-- ImageView -->
 
         <TextView
             android:id="@+id/tvTitle"
@@ -27,15 +24,22 @@
             android:textSize="22sp"
             android:textStyle="bold" />
 
-        <!-- EditText Full Name -->
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/robin_shape"
+            android:gravity="center">
 
-        <ImageView
-            android:id="@+id/imgLogo"
-            android:layout_width="260dp"
-            android:layout_height="260dp"
-            android:layout_marginBottom="24dp"
-            android:src="@drawable/robin"
-            android:scaleType="centerInside" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="robin"
+                android:textColor="#FFFFFF"
+                android:textSize="45sp"
+                android:layout_gravity="center"
+                android:textStyle="italic"
+                android:fontFamily="casual"/>
+        </FrameLayout>
 
 
 
@@ -47,7 +51,6 @@
             android:textColorHint="@color/black"
             android:layout_marginBottom="12dp" />
 
-        <!-- EditText Email -->
         <EditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
@@ -57,7 +60,6 @@
             android:inputType="textEmailAddress"
             android:layout_marginBottom="12dp" />
 
-        <!-- EditText Password -->
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
@@ -75,7 +77,6 @@
             android:inputType="textPassword"
             android:layout_marginBottom="12dp" />
 
-        <!-- Button -->
         <Button
             android:id="@+id/btnSignUp"
             android:layout_width="match_parent"
@@ -84,6 +85,7 @@
             android:backgroundTint="#47E0C0"
             android:text="SIGN UP"
             android:textColor="@color/white"
+            android:textSize="20dp"
             android:textAllCaps="true"
             android:textStyle="bold" />
 
